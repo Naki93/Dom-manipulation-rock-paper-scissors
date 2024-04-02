@@ -1,0 +1,33 @@
+<!-- Document type declaration: specify version of HTML (HTML) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         
+        <h4 class="playerScore">PlayerScore:<span>0</span></h4>
+        <h4 class="computerScore">ComputerScore:<span>0</span></h4>
+        <p class="result"></p>
+    </header>
+    <main>
+        <h2>Enter your choice:</h2>
+        <input type="text" id="userChoiceInput" placeholder="(rock, paper, or scissors)">
+        <button id="submitChoiceButton">Submit</button>
+        <div class="overlay">
+            <div class="overlay-content">
+                <span class="close">&times;</span>
+                <h2 class="game-over-message"></h2>
+                <div class="again">
+                <button id="playAgainButton">Play Again</button>
+            </div>
+            </div>
+        </div>
+    </main>
+   <script src="script.js"></script> 
+</body>
+</html>

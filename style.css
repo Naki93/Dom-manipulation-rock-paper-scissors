@@ -1,0 +1,70 @@
+/* Center the results div */
+.result{
+    display: block; /* Initially display the message */
+    visibility: hidden; /* Hide the message */
+    text-align: center;
+    font-size: large;
+    font-family: Helvetica, sans-serif;
+}
+
+.visible {
+    display: block; /* or any other display property */
+}
+
+ /* Overlay styles */
+ .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1000;
+}
+
+/* Message styles */
+.game-over-message {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Play again button styles */ 
+/* .play-again-button {
+    display: block;
+    margin: 100px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+#playAgainButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 50px auto;
+    background-color: rgb(77, 74, 70);
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+.again{
+    padding-top: 50px;
+    margin-left: 46.5%;
+}
+
+.close{
+    margin-left: 90%;
+    cursor: pointer;
+    font-size: 30px; /* Adjust the font size as needed */
+    width: 45px; /* Adjust the width as needed */
+    height: 45px;
+    font-weight: bolder;
+
+}
