@@ -100,7 +100,7 @@ function playRound() {
     if (playerChoice !== 'rock' && playerChoice !== 'paper' && playerChoice !== 'scissors') {
         showResultMessage('Please enter a valid choice (rock, paper, or scissors)');
         return; // Exit the function if input is invalid
-    }
+    };
     let computerChoice = computerSelection();
 
     // Determine the winner and update scores
