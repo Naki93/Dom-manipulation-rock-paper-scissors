@@ -14,13 +14,13 @@ function computerSelection(){
 }
 //Call the function computerSelection() and store it in a variable computerChoice
 let computerChoice = computerSelection()
-
+//Create a function that will update the playerscore on the webpage
 function updatePlayerScore(){
     const playerScoreElement = document.querySelector('.playerScore span')
     playerScoreElement.textContent = playerScore
 }
 
-updatePlayerScore()
+// updatePlayerScore()
 
 function updateComputerScore() {
     const computerScoreElement = document.querySelector('.computerScore span');
@@ -34,8 +34,8 @@ function showResultMessage(message) {
     resultElement.textContent = message;
     resultElement.style.visibility = 'visible'; // Make the message visible
     setTimeout(() => {
-        resultElement.style.visibility = 'hidden'; // Hide the message after 2 seconds
-    }, 4000);
+        resultElement.style.visibility = 'hidden'; // Hide the message after 5 seconds
+    }, 5000);
 }
 
 function gameOver(winner){
@@ -97,6 +97,10 @@ function playRound() {
     // Get player and computer choices
     let playerChoiceInput = document.getElementById("userChoiceInput");
     let playerChoice = playerChoiceInput.value.toLowerCase(); // Change this to test different player choices
+    if (playerChoice !== 'rock' && playerChoice !== 'paper' && playerChoice !== 'scissors') {
+        showResultMessage('Please enter a valid choice (rock, paper, or scissors)');
+        return; // Exit the function if input is invalid
+    }
     let computerChoice = computerSelection();
 
     // Determine the winner and update scores
